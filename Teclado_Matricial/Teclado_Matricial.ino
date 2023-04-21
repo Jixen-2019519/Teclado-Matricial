@@ -15,14 +15,14 @@
 
 #define Filas 4   
 #define Columnas 4 
-#define F1 2
-#define F2 3
-#define F3 4 
-#define F4 5
-#define C1 6
-#define C2 7
-#define C3 8
-#define C4 9
+#define F1 9
+#define F2 8
+#define F3 7
+#define F4 6
+#define C1 5
+#define C2 4
+#define C3 3
+#define C4 2
 
 // Defino las leds del display
 #define A 10
@@ -110,20 +110,20 @@ delay(1000);
 
    if(tecla == '0'){
 
-digitalWrite(10,OUTPUT);// 0
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
-digitalWrite(14,OUTPUT);
-digitalWrite(15,OUTPUT);
-digitalWrite(16,OUTPUT);
+digitalWrite(10,HIGH);// 0
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
+digitalWrite(14,HIGH);
+digitalWrite(15,HIGH);
+digitalWrite(16,HIGH);
 digitalWrite(17,LOW);
 delay(100);
 }
   if(tecla == '1'){
 
 digitalWrite(10,LOW);//1
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
 digitalWrite(14,LOW);
 digitalWrite(15,LOW);
 digitalWrite(16,LOW);
@@ -133,65 +133,65 @@ delay(1000);
   if(tecla == '2'){
 
 
-digitalWrite(10,OUTPUT);//2
-digitalWrite(11,OUTPUT);
+digitalWrite(10,HIGH);//2
+digitalWrite(11,HIGH);
 digitalWrite(12,LOW);
-digitalWrite(14,OUTPUT);
-digitalWrite(15,OUTPUT);
+digitalWrite(14,HIGH);
+digitalWrite(15,HIGH);
 digitalWrite(16,LOW);
-digitalWrite(17,OUTPUT);
+digitalWrite(17,HIGH);
 delay(1000);
 }
   if(tecla == '3'){
 
 
-digitalWrite(10,OUTPUT);//3
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
-digitalWrite(14,OUTPUT);
+digitalWrite(10,HIGH);//3
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
+digitalWrite(14,HIGH);
 digitalWrite(15,LOW);
 digitalWrite(16,LOW);
-digitalWrite(17,OUTPUT);
+digitalWrite(17,HIGH);
 delay(1000);
 }
   if(tecla == '4'){
 
 digitalWrite(10,LOW);//4
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
 digitalWrite(14,LOW);
 digitalWrite(15,LOW);
-digitalWrite(16,OUTPUT);
-digitalWrite(17,OUTPUT);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
 delay(1000);
 }
   if(tecla == '5'){
 
-digitalWrite(10,OUTPUT);//5
+digitalWrite(10,HIGH);//5
 digitalWrite(11,LOW);
-digitalWrite(12,OUTPUT);
-digitalWrite(14,OUTPUT);
+digitalWrite(12,HIGH);
+digitalWrite(14,HIGH);
 digitalWrite(15,LOW);
-digitalWrite(16,OUTPUT);
-digitalWrite(17,OUTPUT);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
 delay(1000);
 }
   if(tecla == '6'){
 
-digitalWrite(10,OUTPUT);//6
+digitalWrite(10,HIGH);//6
 digitalWrite(11,LOW);
-digitalWrite(12,OUTPUT);
-digitalWrite(14,OUTPUT);
-digitalWrite(15,OUTPUT);
-digitalWrite(16,OUTPUT);
-digitalWrite(17,OUTPUT);
+digitalWrite(12,HIGH);
+digitalWrite(14,HIGH);
+digitalWrite(15,HIGH);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
 delay(1000);
 }
   if(tecla == '7'){
 
-digitalWrite(10,OUTPUT);//7
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
+digitalWrite(10,HIGH);//7
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
 digitalWrite(14,LOW);
 digitalWrite(15,LOW);
 digitalWrite(16,LOW);
@@ -200,26 +200,51 @@ delay(1000);
 }
   if(tecla == '8'){
 
-digitalWrite(10,OUTPUT);//8
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
-digitalWrite(14,OUTPUT);
-digitalWrite(15,OUTPUT);
-digitalWrite(16,OUTPUT);
-digitalWrite(17,OUTPUT);
+digitalWrite(10,HIGH);//8
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
+digitalWrite(14,HIGH);
+digitalWrite(15,HIGH);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
 delay(1000);
 }
   if(tecla == '9'){
 
-digitalWrite(10,OUTPUT);//9
-digitalWrite(11,OUTPUT);
-digitalWrite(12,OUTPUT);
-digitalWrite(14,OUTPUT);
+digitalWrite(10,HIGH);//9
+digitalWrite(11,HIGH);
+digitalWrite(12,HIGH);
+digitalWrite(14,HIGH);
 digitalWrite(15,LOW);
-digitalWrite(16,OUTPUT);
-digitalWrite(17,OUTPUT);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
 delay(1000);
 }
+
+// Tecla *
+   if (tecla == '*') {
+digitalWrite(10,HIGH);
+digitalWrite(11,LOW);
+digitalWrite(12,LOW);
+digitalWrite(14,HIGH);
+digitalWrite(15,HIGH);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
+delay(1000);
+}
+
+// Tecla #
+   if (tecla == '#') {
+digitalWrite(10,HIGH);
+digitalWrite(11,LOW);
+digitalWrite(12,LOW);
+digitalWrite(14,LOW);
+digitalWrite(15,HIGH);
+digitalWrite(16,HIGH);
+digitalWrite(17,HIGH);
+delay(1000);
+    
+    }
 else
    digitalWrite(10,HIGH);
    digitalWrite(11,HIGH);
